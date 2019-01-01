@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 /**
  * @author suiguozhen on 19-1-1 下午6:48
  */
-//@Repository
+@Repository
 public class UserDaoImpl extends BaseDaoImpl implements UserDao {
 }

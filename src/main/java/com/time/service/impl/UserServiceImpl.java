@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private UserDao userDao;
-
-    @Autowired
-    private SessionFactory sessionFactory;
+//    @Autowired
+//    private UserDao userDao;
+//
+//    @Autowired
+//    private SessionFactory sessionFactory;
 
     public void save() {
-        SessionFactory sessionFactory = userDao.getS();
+//        SessionFactory sessionFactory = userDao.getS();
         System.out.println("save");
     }
 }
