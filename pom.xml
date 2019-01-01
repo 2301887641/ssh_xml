@@ -12,7 +12,7 @@
         <springVersion>4.3.1.RELEASE</springVersion>
         <mysqlConnectorVersion>5.1.44</mysqlConnectorVersion>
         <hibernateVersion>5.0.7.Final</hibernateVersion>
-        <druidVersion>1.1.5</druidVersion>
+        <druidVersion>1.0.7</druidVersion>
     </properties>
 
     <dependencies>
@@ -42,6 +42,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>${springVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
             <version>${springVersion}</version>
         </dependency>
         <!--hibernate-->
