@@ -5,4 +5,5 @@ package com.time.service.api;
  */
 public interface InfoService extends BaseService{
     void save();
+    void save2();
 }

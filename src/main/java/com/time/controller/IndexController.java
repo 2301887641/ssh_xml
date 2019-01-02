@@ -20,8 +20,7 @@ public class IndexController {
 
     @RequestMapping("index.action")
     public ModelAndView index(ModelAndView model){
-        userService.save();
-        infoService.save();
+        infoService.save2();
         model.setViewName("index");
         return model;
     }
