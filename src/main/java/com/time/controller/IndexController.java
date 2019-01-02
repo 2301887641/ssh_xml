@@ -1,5 +1,6 @@
 package com.time.controller;
 
+import com.time.service.api.InfoService;
 import com.time.service.api.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,9 +15,13 @@ public class IndexController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private InfoService infoService;
+
     @RequestMapping("index.action")
     public ModelAndView index(ModelAndView model){
         userService.save();
+        infoService.save();
         model.setViewName("index");
         return model;
     }

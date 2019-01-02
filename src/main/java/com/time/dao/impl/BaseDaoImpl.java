@@ -15,8 +15,11 @@ public class BaseDaoImpl<DTO> implements BaseDao<DTO> {
     @Resource(name = "sessionFactory")
     private SessionFactory sessionFactory;
 
+    public Session getSession() {
+        return sessionFactory.openSession();
+    }
+
     public void save(DTO dto) {
-        Session session = sessionFactory.openSession();
-        session.save(dto);
+        getSession().save(dto);
     }
 }
