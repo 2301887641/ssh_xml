@@ -2,6 +2,7 @@ package com.time.service.impl;
 
 import com.time.dao.api.UserDao;
 import com.time.service.api.UserService;
+import com.time.service.dto.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,14 +13,15 @@ import org.springframework.stereotype.Service;
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
-//    @Autowired
-//    private UserDao userDao;
-//
-//    @Autowired
-//    private SessionFactory sessionFactory;
+    @Autowired
+    private UserDao userDao;
+
 
     public void save() {
-//        SessionFactory sessionFactory = userDao.getS();
+        User user = new User();
+        user.setUsername("哈哈");
+        user.setAge(12);
+        userDao.save(user);
         System.out.println("save");
     }
 }
