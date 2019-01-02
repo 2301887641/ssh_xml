@@ -16,7 +16,7 @@ public class BaseDaoImpl<DTO> implements BaseDao<DTO> {
     private SessionFactory sessionFactory;
 
     public Session getSession() {
-        return sessionFactory.openSession();
+        return sessionFactory.getCurrentSession();
     }
 
     public void save(DTO dto) {
