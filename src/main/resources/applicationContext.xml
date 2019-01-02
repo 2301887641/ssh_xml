@@ -20,29 +20,29 @@
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
         <!-- 配置初始化大小、最小、最大 -->
-        <property name="initialSize" value="${datasource.initialSize}" />
-        <property name="minIdle" value="${datasource.minIdle}" />
-        <property name="maxActive" value="${datasource.maxActive}" />
-        <!-- 配置获取连接等待超时的时间 -->
-        <property name="maxWait" value="${datasource.maxWait}" />
-        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
-        <property name="timeBetweenEvictionRunsMillis" value="${datasource.timeBetweenEvictionRunsMillis}" />
-        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
-        <property name="minEvictableIdleTimeMillis" value="${datasource.minEvictableIdleTimeMillis}" />
-        <property name="validationQuery" value="${datasource.validationQuery}" />
-        <property name="testWhileIdle" value="${datasource.testWhileIdle}" />
-        <property name="testOnBorrow" value="${datasource.testOnBorrow}" />
-        <property name="testOnReturn" value="${datasource.testOnReturn}" />
+        <!--<property name="initialSize" value="${datasource.initialSize}" />-->
+        <!--<property name="minIdle" value="${datasource.minIdle}" />-->
+        <!--<property name="maxActive" value="${datasource.maxActive}" />-->
+         <!--配置获取连接等待超时的时间-->
+        <!--<property name="maxWait" value="${datasource.maxWait}" />-->
+         <!--配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="${datasource.timeBetweenEvictionRunsMillis}" />-->
+         <!--配置一个连接在池中最小生存的时间，单位是毫秒-->
+        <!--<property name="minEvictableIdleTimeMillis" value="${datasource.minEvictableIdleTimeMillis}" />-->
+        <!--<property name="validationQuery" value="${datasource.validationQuery}" />-->
+        <!--<property name="testWhileIdle" value="${datasource.testWhileIdle}" />-->
+        <!--<property name="testOnBorrow" value="${datasource.testOnBorrow}" />-->
+        <!--<property name="testOnReturn" value="${datasource.testOnReturn}" />-->
         <!--打开PSCache，并且指定每个连接上PSCache的大小-->
-        <property name="poolPreparedStatements" value="${datasource.poolPreparedStatements}" />
-        <property name="maxPoolPreparedStatementPerConnectionSize" value="${datasource.maxPoolPreparedStatementPerConnectionSize}" />
-        <!-- 配置监控统计拦截的filters -->
-        <property name="filters" value="${datasource.filters}" />
+        <!--<property name="poolPreparedStatements" value="${datasource.poolPreparedStatements}" />-->
+        <!--<property name="maxPoolPreparedStatementPerConnectionSize" value="${datasource.maxPoolPreparedStatementPerConnectionSize}" />-->
+         <!--配置监控统计拦截的filters-->
+        <!--<property name="filters" value="${datasource.filters}" />-->
         <!--通过connectProperties属性来打开mergeSql功能；慢SQL记录-->
-        <property name="connectionProperties" value="${datasource.connectionProperties}" />
+        <!--<property name="connectionProperties" value="${datasource.connectionProperties}" />-->
         <!--合并多个DruidDataSource的监控数据-->
         <!-- 配置监控统计拦截的filters -->
-        <property name="useGlobalDataSourceStat" value="${datasource.useGlobalDataSourceStat}" />
+        <!--<property name="useGlobalDataSourceStat" value="${datasource.useGlobalDataSourceStat}" />-->
     </bean>
 
     <!--配置hibernate sessionFactory-->
@@ -66,7 +66,7 @@
         <!--设置映射文件-->
         <property name="mappingResources">
             <list>
-                <value>classpath:hbm/User.hbm.xml</value>
+                <value>hbm/User.hbm.xml</value>
             </list>
         </property>
     </bean>

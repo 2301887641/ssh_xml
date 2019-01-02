@@ -13,9 +13,27 @@
         <mysqlConnectorVersion>5.1.44</mysqlConnectorVersion>
         <hibernateVersion>5.0.7.Final</hibernateVersion>
         <druidVersion>1.0.7</druidVersion>
+        <log4jVersion>1.2.17</log4jVersion>
     </properties>
 
     <dependencies>
+        <!-- 日志 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
         <!--druid数据库连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
